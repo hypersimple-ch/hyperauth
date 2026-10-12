@@ -108,3 +108,18 @@ ou clé privée n’a été détecté dans les fichiers textuels exportés.
 Le serveur temporaire a été arrêté. Revue visuelle laissée au propriétaire.
 Aucun consentement tiers, accès à des fichiers Drive ou test end-to-end Hermes
 n’a été effectué.
+
+Publication Dokploy du 12 octobre 2026 réussie, déploiement
+`NVaVHFgRu3Cu6Yx-pgHgh`, source `828dd275d0b04b419a6425345d9f94749c4b1b24`.
+Le Docker build local a réussi avec `--network=host` après un échec DNS du réseau
+Docker local (`EAI_AGAIN` sur le registre npm). Le build distant a réussi sans
+ce contournement. La configuration Nginx et les pages ont été exercées depuis
+le conteneur, puis le conteneur temporaire a été arrêté.
+
+Contrôles publics réussis : HTTP 200 sur les trois pages, redirections `/privacy`
+et `/terms` vers leurs versions avec slash, redirection HTTP vers HTTPS, sept
+ressources CSS/JS accessibles et HTTP 404 pour une URL inconnue. Titres, liens
+de navigation, canonical et date de publication vérifiés. Aucun cookie renvoyé
+par les trois pages lors du contrôle. Certificat TLS validé avec vérification
+du nom d’hôte : Let’s Encrypt, `*.hypersimple.ch`, expiration le 23 décembre 2026.
+Revue visuelle non effectuée ; configuration Google OAuth/IAM inchangée.
